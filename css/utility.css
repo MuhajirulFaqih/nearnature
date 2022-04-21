@@ -162,6 +162,33 @@
 @media (min-width: 992px) {
     .fs-lg-18 {
         font-size: 18px;
+        line-height: 187.5%;
+    }
+    .fs-lg-24 {
+        font-size: 24px;
+        line-height: 187.5%;
+    }
+    .fs-lg-32 {
+        font-size: 32px;
+        line-height: 187.5%;
+    }
+    .fs-lg-48 {
+        font-size: 48px;
+        line-height: 187.5%;
+    }
+    .fs-lg-75 {
+        font-size: 75px;
+        line-height: 138.5%;
+    }
+    .fs-lg-38 {
+        font-size: 38px;
+        line-height: 187.5%;
+    }
+    .rounded-lg-20 {
+        border-radius: 20px;
+    }
+    .rounded-lg-40 {
+        border-radius: 40px;
     }
 }
 
@@ -172,7 +199,9 @@
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (min-width: 1400px) {
-    
+    .container {
+        max-width: 1140px;
+    }
 }
 
 /* `xxxl` applies to x-large devices (large desktops, less than 1900px) */

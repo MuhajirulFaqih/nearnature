@@ -232,10 +232,33 @@ a {
     }
     .menu-lg li {
         display: inline-block;
-        padding: 0px 5px;
+        padding: 0px 20px;
     }
     .w-lg-logo {
-        width: 150px !important;
+        width: 37px !important;
+    }
+    .box-phase {
+        min-height: 373px;
+    }
+    .box-phase-header {
+        min-height: 298px;
+        margin-top: -66px;
+    }
+
+    .phase-1 {
+        margin-bottom: 180px;
+    }
+    .phase-2 {
+        margin-top: 180px;
+    }
+    .box-rarity {
+        min-height: 174px;
+    }
+    .box-roadmap {
+        min-height: 86px;
+    }
+    .roadmap-md-last-line-2 {
+        bottom: 70%;
     }
 }
 
@@ -247,40 +270,19 @@ a {
     }
     .menu-lg li {
         display: inline-block;
-        padding: 0px 16px;
-    }
-    .form-contact {
-        margin-top: -20em;
-    }
-    .mesh-back-absolute:after {
-        width: 400px;
-        height: 400px;
-        filter: blur(80px);
-        bottom: -8em;
+        padding: 0px 30px;
     }
 }
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (min-width: 1400px) {
-    .container {
-        max-width: 1220px;
-        padding: 0;
-    }
     .menu-lg li {
         display: inline-block;
-    }
-    .mesh-gradient { 
-        background-size: 100%;
-    }
-    .form-subscribe input {
-        padding: 24px;
     }
 }
 
 /* `xxxl` applies to x-large devices (large desktops, less than 1900px) */
 @media (min-width: 1900px) {
-    .container {
-        max-width: 1220px;
-    }
+    
     
 }
