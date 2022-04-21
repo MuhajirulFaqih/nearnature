@@ -171,6 +171,30 @@ a {
     .navigation {
         overflow-y: auto;
     }
+    .box-phase::before {
+        width: 0;
+        height: 0;
+    }
+    .box-phase {
+        position: relative;
+    }
+    .box-phase-last {
+        margin-top: 0;
+    }
+    .box-phase {
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
+    .phase-1 {
+        margin-bottom: 80px;
+    }
+    .phase-2 {
+        margin-top: 80px;
+    }
+    .roadmap-md-last-line-2 {
+        position: absolute;
+        bottom: 80%;
+    }
 }
 
 /* `lg` applies to medium devices (tablets, less than 992px) */

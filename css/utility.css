@@ -160,7 +160,9 @@
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
 @media (min-width: 992px) {
-    
+    .fs-lg-18 {
+        font-size: 18px;
+    }
 }
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
