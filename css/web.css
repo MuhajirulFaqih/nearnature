@@ -1,0 +1,262 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0F5156 !important;
+    line-height: 24px !important;
+    color:#FFFFFF !important;
+    font-weight: 400 !important;
+}
+
+ul { list-style: none; }
+a, a:hover {
+    text-decoration: none !important;
+}
+a {
+    color: inherit !important;
+}
+.border-none {
+    border: none !important;
+}
+.bg-transparent {
+    background: transparent !important;
+}
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 300px;
+    background: #FFFFFF;
+    color: #000000;
+    z-index: 5;
+    transition: all .5s;
+    margin-left: -350px;
+    overflow-y: auto;
+}
+.nav.active {
+    margin-left: 0;
+}
+.nav-toggle:before {
+    content: url("data:image/svg+xml,%3Csvg width='29' height='22' viewBox='0 0 29 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.821462 18.7136L28.9489 18.7138L28.9489 21.7138L0.821442 21.7136L0.821462 18.7136Z' fill='%231B5B59'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.821462 9.72388L28.9489 9.72407L28.9489 12.7241L0.821442 12.7239L0.821462 9.72388Z' fill='%231B5B59'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.821462 0.734131L28.9489 0.73432L28.9489 3.73432L0.821442 3.73413L0.821462 0.734131Z' fill='%231B5B59'/%3E%3C/svg%3E%0A");
+}
+.nav-close:before {
+    content: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.760773 22.1533L22.2543 0.659668L24.3756 2.78098L2.8821 24.2746L0.760773 22.1533Z' fill='%231B5B59'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M24.3756 22.1533L2.88206 0.659668L0.760736 2.78098L22.2543 24.2746L24.3756 22.1533Z' fill='%231B5B59'/%3E%3C/svg%3E%0A");
+}
+.nav-overlay {
+    transition: all .5s;
+}
+.nav-overlay.active {
+    background: rgba(2, 21, 22, 0.822);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+.nav a.active {
+    color: #0F5156 !important;
+}
+.btn-main {
+    outline: none;
+    border: none;
+    color: #0F5156;
+    background: #FF9A83;
+}
+.btn-main:hover, 
+.btn-main:focus, 
+.btn-main:active {
+    background: #e4846e;
+}
+
+#hero {
+    background: url('../assets/img/bg-hero.png');
+    background-size: cover;
+    width: 100%;
+    height: 1080px;
+    background-position: center center;
+}
+
+#client {
+    background: #0B4B50;
+    position: relative;
+}
+
+#client::before {
+    content: url("data:image/svg+xml,%3Csvg width='100%' viewBox='0 0 1440 438' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1440 0.414551H0V172.643C13.8334 160.809 41.5 134.843 41.5 125.643V82.6428L90 162.643L115.5 106.143L147 162.643L156.5 43.6428L182 172.643L199.5 125.643L217.5 172.643L248.5 137.143L280 172.643L309 70.6428L321 209.643L338.5 172.643L348.5 209.643L368 137.143L389.5 209.643L407 153.143L428.5 209.643C457.833 221.309 556.4 259.943 716 321.143C869.714 380.086 1249.73 421.806 1440 437.013V0.414551Z' fill='%23105256'/%3E%3C/svg%3E%0A");
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#rarity, #roadmap {
+    background: #084549;
+    position: relative;
+}
+
+#rarity::before {
+    content: url("data:image/svg+xml,%3Csvg width='100%' viewBox='0 0 1440 438' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0.414551H1440V172.643C1426.17 160.809 1398.5 134.843 1398.5 125.643V82.6428L1350 162.643L1324.5 106.143L1293 162.643L1283.5 43.6428L1258 172.643L1240.5 125.643L1222.5 172.643L1191.5 137.143L1160 172.643L1131 70.6428L1119 209.643L1101.5 172.643L1091.5 209.643L1072 137.143L1050.5 209.643L1033 153.143L1011.5 209.643C982.167 221.309 883.6 259.943 724 321.143C570.286 380.086 190.269 421.806 0 437.013V0.414551Z' fill='%230B4B50'/%3E%3C/svg%3E%0A");
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+}
+
+.box-phase {
+    min-height: 250px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.box-phase::before {
+    content: "";
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 3px;
+    height: 50px;
+    background: #389660;
+}
+
+.box-phase-header {
+    min-height: 200px;
+    margin-top: -40px;
+}
+
+.box-phase-last {
+    margin-top: -33px;
+    margin-bottom: 0;
+}
+
+.box-phase-last::before {
+    width: 0;
+    height: 0;
+}
+
+.list-circle {
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    border-radius: 7px;
+    background: #FF9A83;
+}
+
+.rarity-circle {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 3px solid #389660;
+    background: rgba(255, 255, 255, 0.1);
+}
+.hr-gradient {
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(90deg, #389660 -1.6%, rgba(56, 150, 96, 0) 99.92%);
+}
+#footer {
+    background: #083B3F;
+}
+
+/* `sm` applies to small devices (landscape phones, less than 576px) */
+@media (min-width: 576px) {
+   
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (min-width: 768px) {
+    .navigation {
+        overflow-y: auto;
+    }
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (min-width: 992px) {
+    :root {
+        font-size: 16px;
+    }
+    .nav { 
+        position: relative;
+        margin-left: 0;
+        display: block;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        background: transparent;
+        transition: all .5s;
+    }
+    .nav.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 1em 2em .5em;
+        background: #092a2c;
+    }
+    .nav-overlay.active {
+        display: none;
+        position: relative;
+        background: transparent;
+    }
+    .logo-lg {
+        float: left;
+    }
+    .menu-lg {
+        float: right;
+    }
+    .menu-lg li {
+        display: inline-block;
+        padding: 0px 5px;
+    }
+    .w-lg-logo {
+        width: 150px !important;
+    }
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    .menu-lg li {
+        display: inline-block;
+        padding: 0px 16px;
+    }
+    .form-contact {
+        margin-top: -20em;
+    }
+    .mesh-back-absolute:after {
+        width: 400px;
+        height: 400px;
+        filter: blur(80px);
+        bottom: -8em;
+    }
+}
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1220px;
+        padding: 0;
+    }
+    .menu-lg li {
+        display: inline-block;
+    }
+    .mesh-gradient { 
+        background-size: 100%;
+    }
+    .form-subscribe input {
+        padding: 24px;
+    }
+}
+
+/* `xxxl` applies to x-large devices (large desktops, less than 1900px) */
+@media (min-width: 1900px) {
+    .container {
+        max-width: 1220px;
+    }
+    
+}
