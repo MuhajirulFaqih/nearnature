@@ -200,7 +200,9 @@
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
 @media (min-width: 1200px) {
-   
+    .mb-xl-10 {
+        margin-bottom: 6rem !important;
+    }
 }
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
