@@ -8,6 +8,9 @@
 .bg-white-transparent {
     background: rgba(255, 255, 255, 0.1) !important;
 }
+.border-green-thin {
+    border: 2px solid #389660;
+}
 .border-green {
     border: 3px solid #389660;
 }
@@ -89,6 +92,9 @@
 }
 .rounded-24 {
     border-radius: 24px;
+}
+.shadow-roadmap {
+    box-shadow: 0px 52px 60px -29px rgba(0, 0, 0, 0.25);
 }
 .lh-21 {
     line-height: 21px !important;
