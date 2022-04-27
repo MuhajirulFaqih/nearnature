@@ -69,11 +69,22 @@ a {
 }
 
 #hero {
-    background: url('../assets/img/bg-hero.png');
+    /* background: url('../assets/img/bg-hero.png'); */
+    position: relative;
     background-size: cover;
     width: 100%;
     height: 1080px;
     background-position: center center;
+    overflow: hidden;
+}
+
+#hero #lottie {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1440px;
+    z-index: -1;
 }
 
 #client {
@@ -334,6 +345,9 @@ a {
     }
     #roadmap::after {
         top: 10%;
+    }
+    #hero #lottie {
+        width: 100%;
     }
 }
 
