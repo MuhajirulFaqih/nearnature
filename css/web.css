@@ -101,6 +101,29 @@ a {
     z-index: 0;
 }
 
+#faq {
+    background: #084549;
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+#faq::before {
+    content: url("data:image/svg+xml,%3Csvg width='100%' viewBox='0 0 1440 438' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1440 70.6428H0V172.643C13.8334 160.809 41.5 134.843 41.5 125.643V82.6428L90 162.643L115.5 106.143L147 162.643L156.5 113.871L182 172.643L199.5 125.643L217.5 172.643L248.5 137.143L280 172.643L309 70.6428L321 209.643L338.5 172.643L348.5 209.643L368 137.143L389.5 209.643L407 153.143L428.5 209.643C457.833 221.309 556.4 259.943 716 321.143C869.714 380.086 1249.73 421.806 1440 437.013V70.6428Z' fill='%23084549'/%3E%3Cmask id='mask0_1134_15' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='70' width='1440' height='368'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1440 70.6428H0V172.643C13.8334 160.809 41.5 134.843 41.5 125.643V82.6428L90 162.643L115.5 106.143L147 162.643L156.5 113.871L182 172.643L199.5 125.643L217.5 172.643L248.5 137.143L280 172.643L309 70.6428L321 209.643L338.5 172.643L348.5 209.643L368 137.143L389.5 209.643L407 153.143L428.5 209.643C457.833 221.309 556.4 259.943 716 321.143C869.714 380.086 1249.73 421.806 1440 437.013V70.6428Z' fill='%23084549'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_1134_15)'%3E%3Cg filter='url(%23filter0_f_1134_15)'%3E%3Cellipse cx='554.981' cy='347.291' rx='210.235' ry='99.1383' transform='rotate(-14.7158 554.981 347.291)' fill='%23DDFD81' fill-opacity='0.4'/%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_f_1134_15' x='-113.933' y='-226.484' width='1337.83' height='1147.55' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='232' result='effect1_foregroundBlur_1134_15'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+#faq::after {
+    content: url("data:image/svg+xml,%3Csvg width='51' height='42' viewBox='0 0 51 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.2705 34.8102C12.7706 34.8121 33.436 34.1252 39.6187 22.821C43.1606 16.3731 35.9108 3.80513 35.9108 3.80513C35.9108 3.80513 19.9612 2.67286 20.6766 15.4981C21.5325 28.3441 12.2705 34.8102 12.2705 34.8102Z' fill='%2353B562'/%3E%3Cpath d='M12.2753 34.9668C12.7302 34.7455 30.8531 25.3024 29.9558 18.8884C28.8641 11.0738 36.0728 3.83964 36.0728 3.83964C36.0728 3.83964 20.1131 2.70172 20.8283 15.5864C21.5435 28.4711 12.2753 34.9668 12.2753 34.9668Z' fill='%236ED67A'/%3E%3C/svg%3E%0A");
+    position:absolute;
+    bottom: 20px;
+    left: 0;
+    z-index: 0;
+}
+
 #rarity, #roadmap {
     background: #084549;
     position: relative;
@@ -175,6 +198,14 @@ a {
     border: 3px solid #389660;
     background: rgba(255, 255, 255, 0.1);
 }
+.rarity-point {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 3px solid #389660;
+    background: rgba(255, 255, 255, 0.1);
+}
 .hr-gradient {
     height: 2px;
     width: 100%;
@@ -191,7 +222,7 @@ a {
 }
 #roadmap {
     padding-top: 50px !important;
-    padding-bottom: 60px !important;
+    padding-bottom: 0px !important;
 }
 #footer {
     background: #083B3F;
@@ -212,7 +243,7 @@ a {
 .leaf-1::after {
     bottom: 10%;
     right: 10%;
-    content: url("data:image/svg+xml,%3Csvg width='87' height='60' viewBox='0 0 87 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M85.9 4.07558C85.9 4.07558 45.9 -10.4244 32.4 15.2756C14.8 48.9756 0 44.0756 0 44.0756C0 44.0756 30.8 72.6756 60.5 51.9756C90.2 31.2756 85.9 4.07558 85.9 4.07558Z' fill='url(%23paint0_linear_1056_322)'/%3E%3Cpath opacity='0.5' d='M79.9 8.37549C79.1 11.3755 77.6 14.1755 75.9 16.7755L74.6 18.7755L73.2 20.6755C72.3 21.9755 71.2 23.0755 70.1 24.2755C65.8 28.8755 60.7 32.6755 55.3 35.8755L51.2 37.9755C50.5 38.3755 49.8 38.6755 49.1 38.9755L46.9 39.8755C44.1 41.1755 41 42.0755 38.1 42.9755C37.4 43.1755 36.6 43.4755 35.9 43.5755L33.6 44.0755C32.1 44.3755 30.6 44.6755 29 44.9755C25.9 45.3755 22.8 45.6755 19.8 45.7755C22.7 44.5755 25.6 43.6755 28.4 42.6755C29.8 42.0755 31.2 41.5755 32.6 40.9755C34 40.3755 35.4 39.9755 36.8 39.2755C39.5 38.0755 42.3 36.9755 45 35.5755C46.3 34.8755 47.7 34.3755 49 33.5755L52.9 31.4755C58 28.4755 62.9 25.1755 67.5 21.3755C68.6 20.3755 69.8 19.4755 70.8 18.3755L72.4 16.8755L74 15.2755C76.1 13.1755 78.1 10.8755 79.9 8.37549Z' fill='url(%23paint1_linear_1056_322)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1056_322' x1='0' y1='29.7377' x2='86.1115' y2='29.7377' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%233A9A63'/%3E%3Cstop offset='1' stop-color='%2358BA62'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_1056_322' x1='19.7721' y1='27.0993' x2='79.8795' y2='27.0993' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%230F5156'/%3E%3Cstop offset='1' stop-color='%230F5156' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+    content: url("data:image/svg+xml,%3Csvg width='53' height='37' viewBox='0 0 53 37' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M51.9856 2.46649C51.9856 2.46649 27.7781 -6.30873 19.6081 9.24459C8.95677 29.6394 0 26.674 0 26.674C0 26.674 18.6398 43.9823 36.6138 31.455C54.5879 18.9276 51.9856 2.46649 51.9856 2.46649Z' fill='url(%23paint0_linear_470_321)'/%3E%3Cpath opacity='0.5' d='M48.3547 5.06885C47.8705 6.88441 46.9627 8.57893 45.9339 10.1524L45.1472 11.3628L44.2999 12.5127C43.7552 13.2994 43.0895 13.9651 42.4238 14.6913C39.8215 17.4752 36.7351 19.7749 33.4671 21.7115L30.9858 22.9824C30.5622 23.2245 30.1385 23.406 29.7149 23.5876L28.3835 24.1323C26.689 24.919 24.8129 25.4637 23.0578 26.0083C22.6342 26.1294 22.1501 26.3109 21.7264 26.3714L20.3345 26.674C19.4267 26.8556 18.5189 27.0371 17.5506 27.2187C15.6746 27.4608 13.7985 27.6423 11.9829 27.7029C13.738 26.9766 15.493 26.432 17.1875 25.8268C18.0348 25.4637 18.882 25.1611 19.7293 24.798C20.5766 24.4348 21.4238 24.1928 22.2711 23.7691C23.9051 23.0429 25.5996 22.3772 27.2336 21.5299C28.0204 21.1063 28.8676 20.8037 29.6544 20.3196L32.0146 19.0487C35.1011 17.2331 38.0665 15.236 40.8503 12.9363C41.5161 12.3311 42.2423 11.7864 42.8475 11.1207L43.8158 10.2129L44.7841 9.24464C46.055 7.97375 47.2653 6.58182 48.3547 5.06885Z' fill='url(%23paint1_linear_470_321)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_470_321' x1='0' y1='17.9969' x2='52.1136' y2='17.9969' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%233A9A63'/%3E%3Cstop offset='1' stop-color='%2358BA62'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_470_321' x1='11.966' y1='16.4003' x2='48.3423' y2='16.4003' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%230F5156'/%3E%3Cstop offset='1' stop-color='%230F5156' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
 }
 
 .leaf-2::after {
@@ -225,6 +256,49 @@ a {
     bottom :0;
     left: 5%;
     content: url("data:image/svg+xml,%3Csvg width='62' height='42' viewBox='0 0 62 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.3698 34.7363C18.8715 34.7465 39.5784 34.3964 45.4333 23.1239C48.7882 16.6942 41.1311 3.92827 41.1311 3.92827C41.1311 3.92827 25.0984 2.52564 26.2092 15.4426C27.4616 28.3828 18.3698 34.7363 18.3698 34.7363Z' fill='%2353B562'/%3E%3Cpath d='M18.4193 34.9979C18.8711 34.7821 36.8479 25.5513 35.7461 19.0625C34.4052 11.1568 41.4488 3.97457 41.4488 3.97457C41.4488 3.97457 25.3269 2.56139 26.4442 15.5783C27.5616 28.5952 18.4193 34.9979 18.4193 34.9979Z' fill='%236ED67A'/%3E%3C/svg%3E%0A");
+}
+
+.accordion-nature .accordion-item {
+    border: none;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 0 !important;
+    margin-top: 1.5rem;
+}
+.accordion-nature .accordion-item:first-of-type .accordion-button,
+.accordion-nature .accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: 12px !important;
+}
+
+.accordion-nature .accordion-button:not(.collapsed) {
+    color: #FFFFFF;
+}
+.accordion-nature .accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.accordion-nature .accordion-button {
+    background-color: #0F5156;
+    color: #FFFFFF;
+    font-weight: 600;
+    border: 2px solid #389660;
+    padding: 1.2rem 1.5rem;
+    border-radius: 12px !important;
+}
+
+.accordion-nature .accordion-body {
+    background: #073C40;
+    padding: 1.2rem 1.5rem;
+    margin-top: 1.5rem;
+    border: 2px solid #389660;
+    border-radius: 12px !important;
+}
+
+.accordion-nature .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='19' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.895 10.555H10.44V18.115H7.465V10.555H0.0449982V7.86H7.465V0.264999H10.44V7.86H17.895V10.555Z' fill='%234AAB63'/%3E%3C/svg%3E ");
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.965 8V10.695H2V8H15.965Z' fill='%234AAB63'/%3E%3C/svg%3E%0A");
 }
 
 /* `sm` applies to small devices (landscape phones, less than 576px) */
@@ -304,7 +378,7 @@ a {
         width: 37px !important;
     }
     .w-lg-logo-2x {
-        width: 66px !important;
+        width: 40px !important;
     }
     .box-phase {
         min-height: 373px;
@@ -340,11 +414,20 @@ a {
         padding-top: 112px !important;
     }
     #roadmap {
-        padding-top: 183px !important;
-        padding-bottom: 269px !important;
+        padding-top: 60px !important;
+        padding-bottom: 60px !important;
     }
     #roadmap::after {
-        top: 10%;
+        top: 0%;
+        left: 15%;
+    }
+    #faq {
+        padding-top: 220px !important;
+        padding-bottom: 150px !important;
+    }
+    #faq::after {
+        left: 3%;
+        bottom: 10%;
     }
     #hero #lottie {
         width: 100%;
@@ -363,13 +446,13 @@ a {
     }
     .leaf-1::after {
         bottom: 5%;
-        right: 20%;
+        right: 5%;
     }
     
     .leaf-2::after {
         bottom: -10%;
         left: auto;
-        right: 40%;
+        right: 38%;
     }
     
     .leaf-3::after {
@@ -390,6 +473,9 @@ a {
         top: 55%;
         left: 5%;
     }
+    #faq::after {
+        left: 8%;
+    }
 }
 
 /* `xxxl` applies to x-large devices (large desktops, less than 1900px) */
@@ -397,5 +483,8 @@ a {
     .leaf-1::before {
         top: 5%;
         left: 14%;
+    }
+    #faq::after {
+        left: 15%;
     }
 }

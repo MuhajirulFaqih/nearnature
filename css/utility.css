@@ -207,6 +207,26 @@
     .mb-xl-10 {
         margin-bottom: 6rem !important;
     }
+    .rounded-xl-24 {
+        border-radius: 24px;
+    }
+    .pe-xl-rarity {
+        padding-right: 80px;
+    }
+    .ps-xl-rarity {
+        padding-left: 80px;
+    }
+    .px-xl-rarity {
+        padding-left: 35px;
+        padding-right: 55px;
+    }
+    .px-xl-rarity-2 {
+        padding-right: 30px;
+        padding-left: 60px;
+    }
+    .fs-xl-20 {
+        font-size: 20px;
+    }
 }
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
