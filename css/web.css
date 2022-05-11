@@ -462,6 +462,12 @@ a {
     .roadmap-md-last-line-2 {
         bottom: 82%;
     }
+    .roadmap-full-line {
+        position: absolute;
+        top: 10%;
+        right: 0%;
+        width: 92%;
+    }
 }
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
