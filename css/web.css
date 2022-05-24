@@ -73,7 +73,7 @@ a {
     position: relative;
     background-size: cover;
     width: 100%;
-    height: 1080px;
+    height: 100vh;
     background-position: center center;
     overflow: hidden;
 }
@@ -180,6 +180,25 @@ a {
 }
 .box-roadmap {
     min-height: 60px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+.box-roadmap span {
+    padding-left: 12px;
+    display: block;
+    position: relative;
+    font-size: 12px;
+}
+.box-roadmap span::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    top: 8px;
+    left: 0;
 }
 
 .list-circle {
@@ -301,9 +320,55 @@ a {
     background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.965 8V10.695H2V8H15.965Z' fill='%234AAB63'/%3E%3C/svg%3E%0A");
 }
 
+.counter {
+    display: flex;
+    align-items: center;
+}
+
+.counter div {
+    padding: 0 5px;
+}
+
+.timer-dots {
+    margin-bottom: 30px;
+}
+
+.timer-box {
+    border-radius: 13px;
+    background: rgba(255, 255, 255, 0.3);
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding: 5px;
+    position: relative;
+}
+
+.timer-box::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 0px 0px 13px 13px;
+}
+
+.featured-box {
+    background: rgba(15, 81, 86, 0.4);
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 10px 32px 0px rgba(0, 0, 0, 0.51);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+}
+
 /* `sm` applies to small devices (landscape phones, less than 576px) */
 @media (min-width: 576px) {
-   
+    #hero {
+        height: 900px;
+    }
 }
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
@@ -335,12 +400,33 @@ a {
         position: absolute;
         bottom: 80%;
     }
+    .timer-dots {
+        margin-bottom: 35px;
+        padding: 8px !important;
+    }
+    
+    .timer-box {
+        width: 80px;
+        height: 80px;
+        padding: 5px;
+    }
+    
+    .timer-box::after {
+        height: 40px;
+    }
+
+    .mt-offset-md-minting {
+        margin-top: -60px;
+    }
 }
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
 @media (min-width: 992px) {
     :root {
         font-size: 16px;
+    }
+    #hero {
+        height: 100vh;
     }
     .nav { 
         position: relative;
@@ -432,6 +518,9 @@ a {
     #hero #lottie {
         width: 100%;
     }
+    .mt-offset-md-minting {
+        margin-top: -40px;
+    }
 }
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
@@ -468,6 +557,16 @@ a {
         right: 0%;
         width: 92%;
     }
+    .featured-box { 
+        min-height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 52px 60px -29px rgba(0, 0, 0, 0.51);
+    }
+    .box-roadmap span {
+        font-size: 14px;
+    }
 }
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
@@ -480,7 +579,8 @@ a {
         left: 5%;
     }
     #faq::after {
-        left: 8%;
+        left: 5%;
+        bottom: 30%;
     }
 }
 

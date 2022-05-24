@@ -38,6 +38,14 @@
 .fw-extrabold {
     font-weight: 700;
 }
+.fs-10 {
+    font-size: 10px;
+    line-height: 187.5%;
+}
+.fs-12 {
+    font-size: 12px;
+    line-height: 187.5%;
+}
 .fs-14 {
     font-size: 14px;
     line-height: 187.5%;
@@ -164,6 +172,16 @@
     
 }
 
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (min-width: 768px) {
+    .fs-md-16 {
+        font-size: 16px;
+    }
+    .fs-md-24 {
+        font-size: 24px;
+    }
+}
+
 /* `lg` applies to medium devices (tablets, less than 992px) */
 @media (min-width: 992px) {
     .fs-lg-18 {
@@ -176,6 +194,10 @@
     }
     .fs-lg-24 {
         font-size: 24px;
+        line-height: 187.5%;
+    }
+    .fs-lg-30 {
+        font-size: 30px;
         line-height: 187.5%;
     }
     .fs-lg-32 {
