@@ -2,7 +2,7 @@ var animationData = {"v":"5.8.0","fr":30,"ip":0,"op":450,"w":1600,"h":1200,"nm":
 var params = {
     container: document.getElementById('lottie'),
     renderer: 'svg',
-    loop: true,
+    loop: false,
     autoplay: true,
     animationData: animationData
 };
