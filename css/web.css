@@ -108,7 +108,7 @@ a {
     padding-bottom: 100px;
 }
 
-#faq::before {
+#how::before {
     content: url("data:image/svg+xml,%3Csvg width='100%' viewBox='0 0 1440 438' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1440 70.6428H0V172.643C13.8334 160.809 41.5 134.843 41.5 125.643V82.6428L90 162.643L115.5 106.143L147 162.643L156.5 113.871L182 172.643L199.5 125.643L217.5 172.643L248.5 137.143L280 172.643L309 70.6428L321 209.643L338.5 172.643L348.5 209.643L368 137.143L389.5 209.643L407 153.143L428.5 209.643C457.833 221.309 556.4 259.943 716 321.143C869.714 380.086 1249.73 421.806 1440 437.013V70.6428Z' fill='%23084549'/%3E%3Cmask id='mask0_1134_15' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='70' width='1440' height='368'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1440 70.6428H0V172.643C13.8334 160.809 41.5 134.843 41.5 125.643V82.6428L90 162.643L115.5 106.143L147 162.643L156.5 113.871L182 172.643L199.5 125.643L217.5 172.643L248.5 137.143L280 172.643L309 70.6428L321 209.643L338.5 172.643L348.5 209.643L368 137.143L389.5 209.643L407 153.143L428.5 209.643C457.833 221.309 556.4 259.943 716 321.143C869.714 380.086 1249.73 421.806 1440 437.013V70.6428Z' fill='%23084549'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_1134_15)'%3E%3Cg filter='url(%23filter0_f_1134_15)'%3E%3Cellipse cx='554.981' cy='347.291' rx='210.235' ry='99.1383' transform='rotate(-14.7158 554.981 347.291)' fill='%23DDFD81' fill-opacity='0.4'/%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_f_1134_15' x='-113.933' y='-226.484' width='1337.83' height='1147.55' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='232' result='effect1_foregroundBlur_1134_15'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
     position: absolute;
     width: 100%;
@@ -124,7 +124,7 @@ a {
     z-index: 0;
 }
 
-#rarity, #roadmap {
+#rarity, #roadmap, #how {
     background: #084549;
     position: relative;
 }

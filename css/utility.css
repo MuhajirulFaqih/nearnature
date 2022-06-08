@@ -216,6 +216,9 @@
         font-size: 38px;
         line-height: 187.5%;
     }
+    .rounded-lg-12 {
+        border-radius: 12px;
+    }
     .rounded-lg-20 {
         border-radius: 20px;
     }
